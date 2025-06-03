@@ -1,0 +1,101 @@
+/* Estilos personalizados para el Sistema de Inventario */
+
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #f8f9fc; /* Un gris claro para el fondo general */
+}
+
+/* Estilo para las tarjetas del dashboard */
+.card.border-left-primary {
+    border-left: .25rem solid #4e73df !important;
+}
+.card.border-left-success {
+    border-left: .25rem solid #1cc88a !important;
+}
+.card.border-left-info {
+    border-left: .25rem solid #36b9cc !important;
+}
+.card.border-left-warning {
+    border-left: .25rem solid #f6c23e !important;
+}
+
+.text-xs {
+    font-size: .7rem;
+}
+
+.text-gray-300 {
+    color: #dddfeb !important;
+}
+.text-gray-800 {
+    color: #5a5c69 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+/* Ajustes para la tabla responsiva con scroll si es necesario */
+.table-responsive {
+    /* Considera agregar max-height y overflow-y: auto; si las tablas son muy largas */
+}
+
+/* Estilos para mensajes de feedback (puedes expandir esto) */
+.form-feedback-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Para que no interfiera con el clic en el input */
+}
+
+/* Mejoras visuales para los badges de estado */
+.badge {
+    font-size: 0.8em;
+    padding: 0.4em 0.7em;
+}
+
+/* Estilo para botones de acción en tablas */
+.actions-btn-group .btn {
+    margin-right: 5px;
+}
+.actions-btn-group .btn:last-child {
+    margin-right: 0;
+}
+
+/* Puedes agregar más estilos específicos para tus módulos aquí */
+
+/* Login Page Specific */
+.login-card {
+    border: none;
+}
+
+.login-card .card-body {
+    padding: 2rem;
+}
+
+/* Sidebar (si decides implementarlo como en el header) */
+/* Ya tienes estilos básicos para el sidebar en el header, 
+   podrías moverlos aquí para centralizar y expandir si es necesario */
+
+/* Estilos para los input file personalizados de Bootstrap 5 */
+.form-control-file {
+    overflow: hidden;
+}
+.form-control-file::file-selector-button {
+    padding: .375rem .75rem;
+    margin: -.375rem -.75rem;
+    margin-inline-end: .75rem;
+    color: var(--bs-body-color);
+    background-color: #eee;
+    pointer-events: none;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-inline-end-width: 1px;
+    border-radius: 0; 
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control-file:hover:not(:disabled):not([readonly])::file-selector-button {
+    background-color: #ddd;
+} 
